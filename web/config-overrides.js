@@ -8,12 +8,13 @@ const {
 
 module.exports = override(
   addWebpackAlias({
-    src: path.join(__dirname, './src'),
-    components: path.join(__dirname, './src/components'),
-    pages: path.join(__dirname, 'src/pages'),
-    images: path.join(__dirname, 'src/images'),
-    assert: path.join(__dirname, 'src/assets'),
-    redux: path.join(__dirname, 'src/redux'),
+    "@src": path.join(__dirname, './src'),
+    "@components": path.join(__dirname, './src/components'),
+    "@pages": path.join(__dirname, 'src/pages'),
+    "@images": path.join(__dirname, 'src/images'),
+    "@assert": path.join(__dirname, 'src/assets'),
+    "@store": path.join(__dirname, 'src/store'),
+    "@styles": path.join(__dirname, 'src/styles'),
   }),
   enableEslintTypescript(),
   useEslintRc()

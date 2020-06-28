@@ -1,11 +1,24 @@
 {
   "compilerOptions": {
     "paths": {
-      "src/*": ["src/*"],
-      "images/*": ["src/images/*"],
-      "components/*": ["src/components/*"],
-      "pages/*": ["src/pages/*"],
-      "redux/*": ["src/redux/*"]
+      "@/*": [
+        "src/*"
+      ],
+      "@images/*": [
+        "src/images/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@store/*": [
+        "src/store/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ]
     }
   }
 }

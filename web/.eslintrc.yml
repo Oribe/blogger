@@ -8,14 +8,32 @@ env: # 允许的全局变量
 
 settings:
   import/resolver:
-    node:
-      paths:
-        - src
+    alias:
+      map:
+        - - "@"
+          - "./src"
+        - - "@components"
+          - "./src/components"
+        - - "@components"
+          - "./src/components"
+        - - "@store"
+          - "./src/store"
+        - - "@pages"
+          - "./src/pages"
+        - - "@images"
+          - "./src/images"
+        - - "@routes"
+          - "./src/routes"
+        - - "@assets"
+          - "./src/assets"
+        - - "@styles"
+          - "./src/styles"
       extensions:
         - .js
         - .jsx
         - .ts
         - .tsx
+
   import/extensions:
     - .js
     - .jsx
@@ -48,6 +66,10 @@ extends:
   - prettier
   - prettier/@typescript-eslint
   - prettier/react
+
+plugins:
+  - react
+  # - react-hooks
 
 rules:
   react/jsx-filename-extension:
