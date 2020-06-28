@@ -1,12 +1,12 @@
 import React, { ReactElement } from 'react'
-import logo from './logo.svg'
+import Background from 'components/Background'
+import Header from 'components/Header'
 import './App.css'
-import Background from '@components/Background'
-import store from './redux'
 
 function App(): ReactElement {
   return (
     <>
+      <Header />
       <Background />
     </>
   )

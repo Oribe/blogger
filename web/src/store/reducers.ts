@@ -1,6 +1,5 @@
 import global from './global'
 
-
 const reducers = {
   global,
 }

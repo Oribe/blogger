@@ -1,12 +1,7 @@
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react'
 
 const NavBar: FC = () => {
-
-  return (
-    <nav>这是一个导航栏那</nav>
-  )
+  return <nav />
 }
-
-
 
 export default NavBar

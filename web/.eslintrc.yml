@@ -9,12 +9,23 @@ env: # 允许的全局变量
 settings:
   import/resolver:
     node:
+      paths:
+        - src
       extensions:
         - .js
         - .jsx
         - .ts
         - .tsx
-  import/extensions: [".js", ".jsx", ".ts", ".tsx"]
+  import/extensions:
+    - .js
+    - .jsx
+    - .ts
+    - .tsx
+  import/ignore:
+    - .js
+    - .jsx
+    - .ts
+    - .tsx
 
 parser: "@typescript-eslint/parser"
 
@@ -30,6 +41,7 @@ extends:
   - plugin:react/recommended
   - plugin:react-hooks/recommended
   - plugin:jsx-a11y/recommended
+  - plugin:import/typescript
   - airbnb
   - airbnb/hooks
   - plugin:prettier/recommended
@@ -37,15 +49,9 @@ extends:
   - prettier/@typescript-eslint
   - prettier/react
 
-# plugins:
-# - "@typescript-eslint"
-# - react
-# - react-hooks
-# - standard
-
 rules:
   react/jsx-filename-extension:
-    - 1
+    - 2
     - extensions:
         - .js
         - .jsx
@@ -53,8 +59,9 @@ rules:
         - .tsx
   import/extensions:
     - 2
-    - ignorePackages:
+    - pattern:
         js: never
         jsx: never
         ts: never
         tsx: never
+  react/prop-types: 0
