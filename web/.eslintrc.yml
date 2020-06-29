@@ -22,12 +22,12 @@ settings:
           - "./src/pages"
         - - "@images"
           - "./src/images"
-        - - "@routes"
-          - "./src/routes"
         - - "@assets"
           - "./src/assets"
         - - "@styles"
           - "./src/styles"
+        - - "@routers"
+          - "./src/routers"
       extensions:
         - .js
         - .jsx
@@ -57,7 +57,7 @@ extends:
   - eslint:recommended
   - plugin:@typescript-eslint/recommended
   - plugin:react/recommended
-  - plugin:react-hooks/recommended
+  # - plugin:react-hooks/recommended
   - plugin:jsx-a11y/recommended
   - plugin:import/typescript
   - airbnb
@@ -69,7 +69,6 @@ extends:
 
 plugins:
   - react
-  # - react-hooks
 
 rules:
   react/jsx-filename-extension:
@@ -87,3 +86,5 @@ rules:
         ts: never
         tsx: never
   react/prop-types: 0
+  "@typescript-eslint/explicit-function-return-type": 0
+  no-console: 0

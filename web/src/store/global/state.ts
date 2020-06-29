@@ -1,6 +1,9 @@
 import { Record } from 'immutable'
+import routers from '@/routers'
 
-export class State extends Record({}) {}
+export class State extends Record({
+  routers,
+}) {}
 
 const state = new State()
 

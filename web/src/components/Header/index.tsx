@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
 import { Link } from 'react-router-dom'
-import logo from '@images/WechatIMG13.jpeg'
 import Container from '../Container'
 import NavBar from '../Navbar'
 import styles from './index.module.scss'
@@ -11,7 +10,7 @@ const Header: FC = () => {
       <header className={styles.header}>
         <div className={styles.logo_container}>
           <Link className={styles.logo_link} to="/home">
-            <img src={logo} alt="logo" />
+            <span>YuujinnA</span>
           </Link>
         </div>
         <NavBar />

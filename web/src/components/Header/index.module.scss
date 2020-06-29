@@ -6,15 +6,17 @@
 
 .header {
   height: 60px;
+  display: flex;
+  justify-content: space-between;
   .logo_container {
-    width: 60px;
+    display: inline-block;
     height: 100%;
-    border-radius: 60px;
     overflow: hidden;
-
     .logo_link {
-      display: block;
-      height: 100%;
+      display: inline-block;
+      line-height: 60px;
+      font-family: Brannboll Smal;
+      font-weight: bold;
     }
   }
 }
