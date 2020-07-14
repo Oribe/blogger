@@ -19,5 +19,5 @@ module.exports = override(
     '@routers': path.join(__dirname, './src/routers'),
   }),
   enableEslintTypescript(),
-  useEslintRc(path.join(__dirname, './.eslintrc.yml'))
+  useEslintRc(path.join(__dirname, './.eslintrc.yml')),
 )

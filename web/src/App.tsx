@@ -3,9 +3,10 @@ import { Switch, Route } from 'react-router-dom'
 import Background from './components/Background'
 import Header from './components/Header'
 import Container from './components/Container'
-import routers from './routers'
+import useRouters from './routers'
 
 function App(): ReactElement {
+  const routers = useRouters()
   return (
     <Suspense fallback={<></>}>
       <Header />

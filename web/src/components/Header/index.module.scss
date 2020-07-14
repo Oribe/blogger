@@ -1,4 +1,4 @@
-@import "~@styles/app.scss";
+@import "~@styles/app.module.scss";
 .header_container {
   background-color: $white;
   box-shadow: 1px 1px 10px #ccc;
@@ -14,9 +14,11 @@
     overflow: hidden;
     .logo_link {
       display: inline-block;
+      font-size: 28px;
       line-height: 60px;
-      font-family: Brannboll Smal;
+      font-family: "Brannboll Smal";
       font-weight: bold;
+      color: #5b1624;
     }
   }
 }

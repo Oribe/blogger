@@ -9,8 +9,8 @@ const Header: FC = () => {
     <Container wrapperClassName={styles.header_container}>
       <header className={styles.header}>
         <div className={styles.logo_container}>
-          <Link className={styles.logo_link} to="/home">
-            <span>YuujinnA</span>
+          <Link className={styles.logo_link} to="/">
+            <span>Yurishi</span>
           </Link>
         </div>
         <NavBar />

@@ -1,14 +1,30 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"],
-      "@images/*": ["./src/images/*"],
-      "@routers/*": ["./src/routers/*"],
-      "@components/*": ["./src/components/*"],
-      "@pages/*": ["./src/pages/*"],
-      "@store/*": ["./src/store/*"],
-      "@styles/*": ["./src/styles/*"],
-      "@assets/*": ["./src/assets/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "@images/*": [
+        "./src/images/*"
+      ],
+      "@routers/*": [
+        "./src/routers/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@store/*": [
+        "./src/store/*"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ]
     }
   }
 }
